@@ -1,0 +1,92 @@
+{% extends 'base.html' %} {% block title %}Log in {% endblock title %} {% block body %}
+
+
+<section class="signin mt-0 ps-0 pe-0 pb-0">
+
+    <div class="containersignin mt-4 p-5">
+        <div class="signin-blobs container">
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_y0audy3z.json" background="transparent" speed="0.2" style="width: 200px; height: 200px;" loop autoplay class="signin-lottie1"></lottie-player>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_y0audy3z.json" background="transparent" speed="0.7" style="width: 400px; height: 400px;" loop autoplay class="signin-lottie2"></lottie-player>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_y0audy3z.json" background="transparent" speed="0.5" style="width: 600px; height: 600px;" loop autoplay class="signin-lottie3"></lottie-player>
+
+        </div>
+        <div class=" row signin-row d-flex justify-content-center align-items-center h-90">
+            {% for message in messages %}
+            <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                <strong>Alert: </strong> {{message}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+            <div class="col-lg-12 col-xl-11 ">
+                <div class="card signin-card text-black " style="border: none; ">
+                    <div class="card-body signin-card-body p-md-2 ">
+                        <div class="row justify-content-center ">
+                            <div class="signin-inputs col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 ">
+
+                                <p class="text-center h1 fw-bolder mb-5 mx-1 mx-md-4 mt-lg-5 ">Sign in</p>
+
+                                <form method="post" action="/signin" class="mx-1 mx-md-4 ">
+
+                                    {% csrf_token %}
+                                    <div class="d-flex flex-row align-items-center mb-4 mt-lg-5">
+                                        <div class="form-outline flex-fill mb-0 ">
+                                            <i class="fas fa-user fa-lg me-3 fa-fw text-white"></i>
+                                            <label class="form-label" for="username-signin ">Your username</label>
+                                            <input type="text" id="username-signin" name="username" class="form-control" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4 mt-lg-3">
+                                        <div class="form-outline flex-fill mb-0 ">
+                                            <i class="fas fa-lock fa-lg me-3 fa-fw "></i>
+                                            <label class="form-label " for="password-signin ">Your password</label>
+                                            <input type="password" id="password-signin " name="password" class="form-control " required />
+                                        </div>
+                                    </div>
+
+                                    <a href="/signin" class="mt-lg-3">Forgot your password?</a>
+
+                                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4 ">
+                                        <button type="submit" class="signin-btn btn-lg mt-lg-5">Log In</button>
+                                    </div>
+
+                                    <div class="aCenter"> <a href="/signup " class="mt-lg-3 justify">Create an
+                                            account</a></div>
+                                </form>
+
+                            </div>
+                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2 ">
+                                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js "></script>
+                                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js "></script>
+                                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_mjlh3hcy.json " background="transparent " speed="0.5 " loop autoplay class="img-fluid ">
+                                </lottie-player>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+
+    <footer class="m-0 bg-grad-clr ">
+        <div class="p-0 mb-0 mt-5 copyright bg-grad-clr container-fluid ">
+            <div class="container ">
+                <div class="row align-items-center ">
+                    <div class="col-12 col-lg-6 p-0 text-center text-lg-start ">
+                        <p class="my-0 ">copyright © 2022
+                            <a href="/home ">RA-awBOT</a> | All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 mt-3 text-center text-lg-end ">
+                        <p> Designed by AKASH SINGH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+
+{% endblock body %}

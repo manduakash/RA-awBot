@@ -1,0 +1,267 @@
+@media(max-width:768px) {
+     ::-webkit-scrollbar {
+        width: 5px;
+    }
+     ::-webkit-scrollbar-track {
+        background: rgb(219, 219, 219);
+    }
+     ::-webkit-scrollbar-thumb {
+        background: var(--sec);
+        border-radius: 30px;
+    }
+    nav {
+        margin-left: 3px;
+    }
+    .title1 {
+        margin-top: 150px;
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+    .typing-cursor {
+        height: 18px;
+        width: 278px;
+        margin-top: 148px;
+        left: 272px;
+    }
+    .container-main .title2 {
+        font-size: 6rem;
+        margin-top: 160px;
+    }
+    .landing-character {
+        position: absolute;
+        width: 950px;
+        height: 626px;
+        right: -284px;
+        margin-top: 55px;
+    }
+    #get-started {
+        font-size: 1.0rem;
+    }
+    .cta .btn1 {
+        font-size: 1rem;
+    }
+    .cta {
+        position: absolute;
+        display: flex;
+        top: 473px;
+        left: -20px;
+        font-weight: 900;
+    }
+    .landing-bg {
+        position: absolute;
+        z-index: -1000;
+        width: 1000px;
+        height: 656px;
+        right: 184px;
+        top: 81px;
+        margin-top: 55px;
+        opacity: 50%;
+    }
+    .container-pages {
+        position: absolute;
+        width: 770px;
+        height: 1100px;
+        margin-left: -100px;
+        overflow-x: hidden;
+    }
+    .page-1 {
+        z-index: 1;
+        position: absolute;
+        margin-top: 130px;
+        margin-left: 8px;
+        height: 80px;
+        width: 100px;
+    }
+    .page-2 {
+        position: absolute;
+        margin-top: 64px;
+        margin-left: 352px;
+        height: 90px;
+        width: 150px;
+    }
+    .page-3 {
+        z-index: -1;
+        margin-top: 238px;
+        margin-left: 267px;
+    }
+    .page-4 {
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 379px;
+        height: 40px;
+        width: 65px;
+    }
+    .page-5 {
+        position: absolute;
+        margin-top: 410px;
+        margin-left: 150px;
+        height: 75px;
+        width: 100px;
+    }
+    .wave-1 {
+        position: absolute;
+        width: 100%;
+        height: 54px;
+        top: 647px;
+        transform: scaleY(-1);
+        z-index: -99;
+    }
+    /* section2 */
+    .title-ra-awbot {
+        position: absolute;
+        left: 90px;
+        top: 20px;
+        font-size: 59px;
+        font-weight: 900;
+        z-index: 3;
+    }
+    .full-form {
+        display: none;
+        position: absolute;
+        left: 130px;
+        top: 111px;
+        font-size: 10px;
+        font-weight: 500;
+        z-index: 3;
+    }
+    .title-ra-awbot-span1 {
+        font-size: 75px;
+    }
+    .subtitle-ra-awbot {
+        position: absolute;
+        left: 130px;
+        top: 138px;
+        font-size: 26px;
+        font-weight: 500;
+        z-index: 3;
+    }
+    .subtitle-ra-awbot-ul {
+        position: absolute;
+        left: 0px;
+        top: 180px;
+        line-height: 40px;
+        height: 40px;
+        overflow: hidden;
+        z-index: 3;
+    }
+    .subtitle-ra-awbot-ul-li {
+        top: 0;
+        position: relative;
+        list-style: none;
+        color: #ffffff;
+        text-shadow: 2px 2px 3px #ffd900;
+        font-size: 29px;
+        font-weight: 700;
+        z-index: 3;
+        animation: slider 18s steps(6) 4s infinite;
+    }
+    .typing-cursor2 {
+        content: "";
+        position: absolute;
+        background: var(--sec);
+        left: 0px;
+        top: 180px;
+        width: 600px;
+        height: 40px;
+        overflow: hidden;
+        z-index: 3;
+        animation: typing2 3s steps(18) 4s infinite, cursor-blink 0.8s linear infinite;
+    }
+    @keyframes typing2 {
+        100% {
+            left: 500px;
+        }
+    }
+    .box-pages {
+        display: block;
+        position: absolute;
+        top: 300px;
+        left: 82px;
+        width: 300px;
+        height: 300px;
+        z-index: 2;
+    }
+    .welcome-robo {
+        left: 88px;
+    }
+    .wave-2 {
+        margin-top: 1310px;
+    }
+    /* -----------------------------travel------------------------------- */
+    .subhead-travel {
+        margin-top: -77px;
+        font-size: 2.5rem;
+    }
+    .travel-para {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-left: -50px;
+        font-family: 'Montserrat', sans-serif;
+        word-spacing: 2px;
+        line-height: 20px;
+        width: 55%;
+    }
+    .travel-bg,
+    .travel-fg {
+        transform: scale(65%);
+    }
+    .btn-travel a {
+        width: 320px;
+    }
+    /* ------------------.test-paper----------------- */
+    .subhead-test-paper {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    }
+    .head-test-paper {
+        font-size: 3.6rem;
+    }
+    .test-paper-para {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-left: 200px;
+        font-family: 'Montserrat', sans-serif;
+        word-spacing: 2px;
+        line-height: 20px;
+        width: 55%;
+    }
+    .test-paper-img {
+        margin-top: 50px;
+        transform: scale(65%);
+    }
+    .btn-test-paper a {
+        width: 320px;
+    }
+    /* -----------------------------deadline------------------------------- */
+    .subhead-deadline {
+        margin-top: -77px;
+        font-size: 2.5rem;
+    }
+    .deadline-para {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-left: -50px;
+        font-family: 'Montserrat', sans-serif;
+        word-spacing: 2px;
+        line-height: 20px;
+        width: 55%;
+    }
+    .deadline-img-div {
+        transform: scale(65%);
+    }
+    .btn-deadline a {
+        width: 320px;
+    }
+    /* -----------------------------writing------------------------------- */
+    .sec6 {
+        top: 3130px;
+        height: auto;
+    }
+}

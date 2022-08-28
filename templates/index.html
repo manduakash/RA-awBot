@@ -1,0 +1,679 @@
+{% extends 'base.html' %} {% block title %}Home {% endblock title %} {% block body %}
+
+<div class="container-main">
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+        <strong>Alert: </strong> {{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+
+    <!--------------------------------------- sec1 ---------------------------------------------->
+    <section id="home" class="sec1">
+
+
+        <h4 class="title1">
+            <span class="p-clr" id="wanna"> wanna</span> <span class="gry-clr" id="get-rid">get rid of excessive </span>
+        </h4>
+        <div class="typing-cursor"></div>
+        <h1 class="title2 text-grad">Writing?</h1>
+
+        <img src="\static\img\landing character.svg" alt="landing-character" class="landing-character">
+        <img src="\static\img\landing background.svg" alt="landing-bg" class="landing-bg">
+
+        <div class="container-pages">
+            <img src="\static\img\page-1.svg" alt="page-1" class="pages page-1" id="page-1">
+            <img src="\static\img\page-2.svg" alt="page-2" class="pages page-2" id="page-2">
+            <img src="\static\img\page-3.svg" alt="page-3" class="pages page-3" id="page-3">
+            <img src="\static\img\page-4.svg" alt="page-4" class="pages page-4" id="page-4">
+            <img src="\static\img\page-5.svg" alt="page-5" class="pages page-5" id="page-5">
+        </div>
+
+
+        <div class="cta">
+            <a class="cta-btn2 btn2" id="get-started" href="#writing">Get started</a>
+            <a class="cta-btn1 btn1" href="/signup">Sign up</a>
+        </div>
+    </section>
+
+    <div class="wave-conten-1"> <img src="\static\img\wavesOpacity (1).svg" alt="wave-1" class="wave-1"> </div>
+
+    <!--------------------------------------- sec2 ---------------------------------------------->
+    <section class="sec2">
+        <span class="title-ra-awbot"><span class="title-ra-awbot-span1">Ra-</span><span class="title-ra-awbot-span2">aw</span>BOT</span>
+        <span class="full-form">(RAUNAK & AKASH AUTOMATED WRITING BOT)</span>
+        <span class="subtitle-ra-awbot">WE ARE HERE TO</span>
+        <ul class="subtitle-ra-awbot-ul">
+            <li class="subtitle-ra-awbot-ul-li">HELP YOU IN WRITING.</li>
+            <li class="subtitle-ra-awbot-ul-li">SAVE YOUR PRECIOUS TIME.</li>
+            <li class="subtitle-ra-awbot-ul-li">WRITE YOUR ASSIGNMENTS.</li>
+            <li class="subtitle-ra-awbot-ul-li">PREPARE TEST PAPERS.</li>
+            <li class="subtitle-ra-awbot-ul-li">AVOID WRITING HEADACHES.</li>
+            <li class="subtitle-ra-awbot-ul-li">DEAL WITH YOUR DEADLINES.</li>
+        </ul>
+        <div class="typing-cursor2"></div>
+
+        <img src="\static\img\box-pages.svg" alt="box-pages" class="box-pages">
+
+        <lottie-player class="welcome-robo " src="https://assets4.lottiefiles.com/packages/lf20_3vbOcw.json " mode="bounce " background="transparent " speed=".5 " loop autoplay></lottie-player>
+        <img src="\static\img\halftone-abstract.svg" alt="halftone-abstract" class="halftone-abstract">
+    </section>
+
+    <div class=" wave-conten-2 "> <img src="\static\img\wave-2.svg " alt="wave-2 " class="wave-2 "> </div>
+
+    <!--------------------------- travel-section ------------------------------->
+    <section id="features" class="sec3">
+
+        <!------------------------ travel-paras --------------------------->
+
+        <div class="travel-container">
+
+
+            <div class="travel-content">
+                <h3 class="subhead-travel">Are you
+                    <span class="head-travel">Traveling?</span>
+                </h3>
+                <p class="travel-para">
+                    Just assume that when you have been traveling,
+                    <br>It's your last date of assignment submission and
+                    <br>you haven't started yet.
+                    <br>
+                    <span class="s-clr">
+                        <br>Don't worry
+                        <br>Now here comes our, RA-awBOT to help you out.
+                    </span>
+                </p>
+
+                <div class="btn-travel">Lets Start Writing</div>
+            </div>
+            <!--------------------------- travel-img ------------------------------->
+
+            <div class="travel-img">
+                <div class="travel-bg">
+                    <img src="\static\img\travel-bg.svg" alt="travel-bg" class="travel-bg">
+                </div>
+
+                <div class="travel-fg">
+                    <img src="\static\img\travel-fg.svg" alt="travel-fg" class="travel-fg">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--------------------------- test-paper-section ------------------------------->
+    <section class="sec4">
+
+        <!------------------------ test-paper-paras --------------------------->
+
+        <div class="test-paper-container">
+
+
+            <div class="test-paper-content">
+                <h3 class="subhead-test-paper">wanna set a <br> </h3>
+                <h3 class="head-test-paper">Question paper?</h3>
+
+                <p class="test-paper-para">
+                    If your profession is teaching and you haven't enough <br> time to set question papers for class tests,<br>Then you reached the right place.
+                    <br>You are quite busy but tomorrow is exam day <br> What are you gonna do now?
+
+                    <br>
+                    <span class="s-clr">
+                     <br>
+                      There is no need to worry coz
+                     <br>our RA-awBOT is always for you.
+                    </span>
+                </p>
+
+                <div class="btn-test-paper"> <a href="#writing">Lets Start Writing</a></div>
+            </div>
+            <!--------------------------- test-paper-img ------------------------------->
+
+            <div class="test-paper-img-div">
+                <img src="\static\img\test-paper.svg" alt="test-paper" class="test-paper-img">
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!--------------------------- travel-section ------------------------------->
+    <section class="sec3">
+
+        <!------------------------ travel-paras --------------------------->
+
+        <div class="travel-container">
+
+
+            <div class="travel-content">
+                <h3 class="subhead-travel">Are you
+                    <span class="head-travel">Traveling?</span>
+                </h3>
+                <p class="travel-para ">
+                    Just assume that when you have been traveling,
+                    <br>It's your last date of assignment submission and
+                    <br>you haven't started yet.
+                    <br>
+                    <span class="s-clr">
+                        <br>Don't worry
+                        <br>Now here comes our, RA-awBOT to help you out.
+                    </span>
+                </p>
+
+                <div class="btn-travel">
+                    <a href="#writing">Lets Start Writing</a>
+                </div>
+            </div>
+            <!--------------------------- travel-img ------------------------------->
+
+            <div class="travel-img">
+                <div class="travel-bg">
+                    <img src="\static\img\travel-bg.svg" alt="travel-bg" class="travel-bg">
+                </div>
+
+                <div class="travel-fg">
+                    <img src="\static\img\travel-fg.svg" alt="travel-fg" class="travel-fg">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--------------------------- deadline-section5 ------------------------------->
+    <section class="sec5">
+
+        <!------------------------ test-paper-paras --------------------------->
+
+        <div class="deadline-container">
+
+
+            <div class="deadline-content">
+                <h3 class="subhead-deadline">Is it your assignment <br> </h3>
+                <h3 class="head-deadline">Deadline?</h3>
+
+
+                <p class="deadline-para">
+
+
+                    Many of you have been gone through this<br> situation where you need to write lots of <br> assignments but you haven’t enough time for it, <br> What are you gonna do now?
+
+                    <br>
+                    <span class="s-clr">
+                     <br>
+                     No more need to deal with this headache.
+
+                     <br> Again, RA-awBOT is here to deal with it.
+                    </span>
+                </p>
+
+                <div class="btn-deadline"> <a href="#writing">Lets Start Writing</a></div>
+            </div>
+            <!--------------------------- deadline-img ------------------------------->
+
+            <div class="deadline-img-div">
+                <img src="\static\img\deadline.svg" alt="deadline" class="deadline-img">
+            </div>
+
+
+
+        </div>
+        <div class=" wave-conten-3 "> <img src="\static\img\wave-3.svg " alt="wave-3 " class="wave-3 "> </div>
+    </section>
+
+    <!--------------------------- writing-section6 ------------------------------->
+
+    <section id="writing" class="sec6">
+
+        <div class="writing-container">
+
+            <div class="writing-page" id="writing-page" contenteditable="true">
+
+                <!--- writing-section6 --->
+                <br>
+                <h5 class="writing-heading">
+                    CONTINUOUS ASSIGNMENTS-II
+                </h5>
+
+                <br>
+                <h6 class="writing-details">
+                    Name - Akash Singh<br> Dept. - Computer science engineering<br> Semester- 8th , Year- 4th<br> Roll no. - 279001xxxxxxxx<br> Subject - RA-automated Writing BOT<br>
+
+                </h6>
+                <h6>_____________________________________________________</h6>
+                <br>
+                <h6 class="writing-group">Group-(A)
+                </h6>
+                <p class="writing-para">
+                    - - - - - WRITE YOUR CONTENT HERE WHATEVER YOU TO WRITE! - - - - - -
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+
+            <div class="writing-option tilt" data-tilt data-tilt-scale="0.9" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+
+                <h7 class="note-font-styling">[Note: Select one by one text lines, then apply above custumizations.
+                    <br>If it dont work then refresh the page then try again in same way.]</h7>
+
+                <h4 class="head-font-styling">Font styling:</h4>
+
+                <div class="font-styling">
+
+
+                    <!--------- font-size -------->
+                    <label for="font-size" class="select-labels">Font size:</label>
+                    <select id="font-size" name="font-size" class="select-inputs" onchange="fontSize()">
+
+                      <option value="16px">16px</option>
+                      <option value="18px">18px</option>
+                      <option value="20px">20px</option>
+                      <option value="22px">22px</option>
+                    </select>
+
+                    <!--------- font-color -------->
+                    <label for="font-color" class="select-labels">Font color:</label>
+                    <select id="font-color" name="font-color" class="select-inputs" onchange="fontColor()">
+
+                        <option value="#202020">Black</option>
+                        <option value="#100068">Blue</option>
+                      <option value="#cf0000">Red</option>
+                      <option value="#048100">Green</option>
+                    </select>
+
+                    <!--------- font-bold -------->
+                    <label for="font-bold" class="select-labels">Font bold:</label>
+                    <select id="font-bold" name="font-bold" class="select-inputs" onchange="fontBold()">
+
+                      <option value="500">Normal</option>
+                      <option value="700">Bold</option>
+
+                    </select>
+                </div>
+                <h4 class="head-font-spacing">Font spacing:</h4>
+                <div class="font-spacing">
+
+
+                    <!--------- letter-spacing -------->
+                    <label for="letter-spacing" class="select-labels">Letter-spacing:</label>
+                    <select id="letter-spacing" name="letter-spacing" class="select-inputs" onchange="letterSpacing()">
+
+                        <option value="0px">0px</option>
+                      <option value="1px">1px</option>
+                      <option value="2px">2px</option>
+                      <option value="3px">3px</option>
+                      <option value="5px">5px</option>
+                      <option value="7px">7px</option>
+                    </select>
+
+
+                    <!--------- word-spacing -------->
+                    <label for="word-spacing" class="select-labels">Word-spacing:</label>
+                    <select id="word-spacing" name="word-spacing" class="select-inputs" onchange="wordSpacing()">
+
+                        <option value="0px">0px</option>
+                        <option value="2px">2px</option>
+                        <option value="4px">4px</option>
+                        <option value="6px">6px</option>
+                        <option value="8px">8px</option>
+                        <option value="10px">10px</option>
+                    </select>
+
+
+                    <!--------- line-spacing -------->
+                    <label for="line-spacing" class="select-labels">Line-spacing:</label>
+                    <select id="line-spacing" name="line-spacing" class="select-inputs" onchange="lineSpacing()">
+
+                        <option value="12px">12px</option>
+                        <option value="14px">14px</option>
+                        <option value="16px">16px</option>
+                        <option value="20px">20px</option>
+                 </select>
+                </div>
+
+                <h4 class="head-page-setup">Page setup:</h4>
+                <div class="page-setup">
+                    <!--------- Fonts -------->
+                    <label for="fonts" class="select-labels">Fonts:</label>
+                    <select id="fonts" name="fonts" class="select-inputs" onchange="fontsChange()">
+
+                        <option value="handwritten-1">Handwritten-1</option>
+                        <option value="DancingScript">DancingScript</option>
+                        <option value="Cedarville">Cedarville</option>
+
+                    </select>
+
+
+                    <!--------- Pages -------->
+                    <label for="pages" class="select-labels">Pages type:</label>
+                    <select id="pages" name="pages" class="select-inputs">
+
+                       <option value="page1">page1</option>
+                       <option value="page2">page2</option>
+                       <option value="page3">page3</option>
+                       <option value="page4">page4</option>
+                       <option value="page5">page5</option>
+
+                     </select>
+
+                    <!--------- Align-items -------->
+                    <label for="align-items" class="select-labels">Align items:</label>
+                    <select id="align-items" name="align-items" class="select-inputs" onchange="alignText">
+
+                      <option value="left">left</option>
+                      <option value="right">right</option>
+                      <option value="center">center</option>
+                    </select>
+                </div>
+                <button id="download" class="import-btn">Save</button>
+            </div>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_y0audy3z.json" background="transparent" speed="0.2" style="width: 900px; height: 900px;" loop autoplay class="writing-lottie1"></lottie-player>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_y0audy3z.json" background="transparent" speed="0.7" style="width: 400px; height: 400px;" loop autoplay class="writing-lottie2"></lottie-player>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_y0audy3z.json" background="transparent" speed="0.5" style="width: 600px; height: 600px;" loop autoplay class="writing-lottie3"></lottie-player>
+
+        </div>
+    </section>
+    <div class="wave-conten-4"> <img src="\static\img\wave-4.svg" alt="wave-4" class="wave-4"> </div>
+
+    <!--------------------------- Review Section ------------------------------->
+
+    <section id="testimonials" class="review-sec testimonails container-fluid mb-4 ">
+
+        <!--Section heading-->
+        <div class="review-heading container-fluid col-lg-12">
+            <div class="col-lg-4 text-center justify-content-center m-auto">
+                <h1 class="contact-span p-2"> Testimonials</h1>
+            </div>
+        </div>
+
+
+
+        <!--Cards-row-->
+        <div class="row px-4 mt-5">
+
+            <!--Cards-col-->
+            <div class="col-8 m-auto item">
+
+                <!--Card-->
+                <div id="carouselExampleControls" class="carousel slide review-card " data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <div class="card ">
+                                <img src="/static/img/deadline.svg" class="card-img m-auto mt-3" alt="...">
+                                <div class="card-body">
+
+                                    <h5 class="card-title fw-bold">Card title</h5>
+                                    <div class="rating">
+                                        <input type="radio" name="rate" id="rate-1">
+                                        <label for="rate-1" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-2">
+                                        <label for="rate-2" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-3">
+                                        <label for="rate-3" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-4">
+                                        <label for="rate-4" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-5">
+                                        <label for="rate-5" class="far fa-star"></label>
+                                    </div>
+                                    <p class="card-text text-justify my-2">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card ">
+                                <img src="/static/img/deadline.svg" class="card-img m-auto mt-3" alt="...">
+                                <div class="card-body">
+
+                                    <h5 class="card-title fw-bold">Card title</h5>
+                                    <div class="rating">
+                                        <input type="radio" name="rate" id="rate-1">
+                                        <label for="rate-1" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-2">
+                                        <label for="rate-2" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-3">
+                                        <label for="rate-3" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-4">
+                                        <label for="rate-4" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-5">
+                                        <label for="rate-5" class="far fa-star"></label>
+                                    </div>
+                                    <p class="card-text text-justify my-3">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card ">
+                                <img src="/static/img/deadline.svg" class="card-img m-auto mt-3" alt="...">
+                                <div class="card-body">
+
+                                    <h5 class="card-title fw-bold">Card title</h5>
+                                    <div class="rating">
+                                        <input type="radio" name="rate" id="rate-1">
+                                        <label for="rate-1" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-2">
+                                        <label for="rate-2" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-3">
+                                        <label for="rate-3" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-4">
+                                        <label for="rate-4" class="far fa-star"></label>
+
+                                        <input type="radio" name="rate" id="rate-5">
+                                        <label for="rate-5" class="far fa-star"></label>
+                                    </div>
+                                    <p class="card-text text-justify my-3">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon " aria-hidden="true"><i class="fa-solid fa-circle-arrow-left slider-icon"></i>
+                      </span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-circle-arrow-right slider-icon"></i></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="row px-4 mt-5">
+
+            <!--Grid column-->
+            <div class="col-lg-12 mb-md-0 mb-5 mt-5 m-auto text-center s-clr">
+
+                <div class="rating-box-title m-auto text-center ">
+                    <h6 class="s-clr fw-bold">How much do you like this? Please give your feedback.</h6>
+                </div>
+                <form id="review-form" name="review-form" action="#" method="POST">
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <div class="col-md-12 mt-3">
+                            <div class="rating-box text-center">
+
+                                <ul class="stars text-center">
+                                    <li class="star"><i class="fas fa-star"></i></li>
+                                    <li class="star"><i class="fas fa-star"></i></li>
+                                    <li class="star"><i class="fas fa-star"></i></li>
+                                    <li class="star"><i class="fas fa-star"></i></li>
+                                    <li class="star"><i class="fas fa-star"></i></li>
+                                </ul>
+                                <p class="output-rating"></p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-10 mt-3">
+                            <div class="md-form mb-0">
+                                <!-- < type="text" id="message" name="message" rows="2" class="form-control md-textarea"> -->
+                                <textarea type="text" id="review-comment" name="review-comment" class="form-control" style="resize: none;" placeholder="Describe your experience."></textarea>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-2 mt-4">
+                            <div class="text-center text-md-left">
+                                <a class="contact-btn" onclick="document.getElementById('contact-form').submit();">POST</a>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--------------------------- Contact Section ------------------------------->
+    <section id="contact" class="contact-sec container-fluid ps-0 pe-0 pb-0 mb-0 ">
+
+        <!--Section heading-->
+        <div class="contact-heading container-fluid col-lg-12">
+
+            <div class="col-lg-4 mb-4 text-center justify-content-center m-auto">
+                <h1 class="contact-span p-2"> Contact us </h1>
+            </div>
+        </div>
+
+
+        <div class="row px-4">
+
+            <!--Grid column-->
+            <div class="col-lg-6 mb-md-0 mb-5 mt-2">
+                <form method="post" action="/contact" id="contact-form" class="contact-form" name="contact-form">
+                    {% csrf_token %}
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6 mt-4">
+                            <div class="md-form mb-0">
+                                <label for="name" class="fw-bold">Your name</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6 mt-4">
+                            <div class="md-form mb-0">
+                                <label for="email" class="fw-bold">Your email</label>
+                                <input type="text" id="email" name="email" class="form-control">
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-lg-12 mt-4">
+                            <div class="md-form mb-0">
+                                <label for="subject" class="fw-bold">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-lg-12 mt-4">
+
+                            <div class="md-form">
+                                <label for="message" class="fw-bold">Your message</label>
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" style="resize: none;"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                    <div class="text-center text-md-left mt-5">
+                        <button type="submit" class="contact-btn">Submit</button>
+                    </div>
+                </form>
+
+
+
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-6 ">
+                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_isbiybfh.json" background="transparent" speed="0.5" class="img-fluid" loop autoplay></lottie-player>
+
+
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+        <!-- footer section -->
+
+        <footer class="m-0 bg-grad-clr">
+            <div class="p-0 mb-0 mt-5 copyright bg-grad-clr container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-6 p-0 text-center text-lg-start">
+                            <p class="my-0">copyright © 2022
+                                <a href="/home">RA-awBOT</a> | All Rights Reserved
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6 mt-3  text-center text-lg-end">
+                            <p> Designed by AKASH SINGH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+</div>
+
+
+
+
+{% endblock body %}

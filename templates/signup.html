@@ -1,0 +1,107 @@
+{% extends 'base.html' %} {% block title %}Create account {% endblock title %} {% block body %}
+
+
+<section class="signup mt-0 ps-0 pe-0 pb-0 ">
+
+    <div class="containersignup mt-4 p-5">
+
+        <div class="signup-blobs container">
+
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_y0audy3z.json" background="transparent" speed="0.2" style="width: 200px; height: 200px;" loop autoplay class="signup-lottie1"></lottie-player>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_y0audy3z.json" background="transparent" speed="0.7" style="width: 400px; height: 400px;" loop autoplay class="signup-lottie2"></lottie-player>
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_y0audy3z.json" background="transparent" speed="0.5" style="width: 600px; height: 600px;" loop autoplay class="signup-lottie3"></lottie-player>
+
+        </div>
+        <div class=" row signup-row d-flex justify-content-center align-items-center h-90  ">
+
+          {% for message in messages  %}
+           <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+             <strong>Alert: </strong> {{message}}
+             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+           </div>
+          {% endfor %}
+            <div class="col-lg-12 col-xl-11 ">
+                <div class="card signup-card text-black " style="border: none; ">
+                    <div class="card-body singup-card-body p-md-2 ">
+                        <div class="row justify-content-center ">
+                            <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 ">
+
+                                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 ">Sign up</p>
+
+                                <form method="post" action="/signup" class="mx-1 mx-md-4 ">
+                                    {% csrf_token %}
+                                    <div class="d-flex flex-row align-items-center mb-4 ">
+                                        <div class="form-outline flex-fill mb-0 ">
+                                            <i class="fas fa-user fa-lg me-3 fa-fw text-white"></i>
+                                            <label class="form-label " for="username-signup ">Userame</label>
+                                            <input type="text " id="username-signup " class="form-control " name="username" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4 ">
+                                        <div class="form-outline flex-fill mb-0 ">
+                                            <i class="fas fa-envelope fa-lg me-3 fa-fw text-white"></i>
+                                            <label class="form-label " for="email-signup ">Your Email</label>
+                                            <input type="email" id="email-signup" class="form-control" name="email" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class=" d-flex flex-row align-items-center mb-4 ">
+                                        <div class="form-outline flex-fill mb-0 ">
+                                            <i class="fas fa-lock fa-lg me-3 fa-fw text-white "></i>
+                                            <label class="form-label " for="pass1-signup ">Password</label>
+                                            <input type="password" id="pass1-signup" class="form-control " name="pass1" required/>
+                                        </div>
+                                    </div>
+
+                                    <div class=" d-flex flex-row align-items-center mb-4 ">
+                                        <div class="form-outline flex-fill mb-0 ">
+                                            <i class="fas fa-key fa-lg me-3 fa-fw text-white "></i>
+                                            <label class="form-label " for="pass2-signup ">Confirm your password</label>
+                                            <input type="password" id="pass2-signup " class="form-control " name="pass2" required/>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4 ">
+                                        <button type="submit" class="register-btn btn-lg ">Register</button>
+                                    </div>
+                                    <a href="/signin" class="mt-lg-3 aCenter">Already have an account?</a>
+                                </form>
+
+                            </div>
+                            <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2 ">
+                                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js "></script>
+                                <lottie-player class="float-end " src=" https://assets9.lottiefiles.com/packages/lf20_q5pk6p1k.json " background="transparent " speed="1 " class="img-fluid " loop autoplay></lottie-player>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer section -->
+
+    <footer class="m-0 bg-grad-clr ">
+        <div class="p-0 mb-0 mt-5 copyright bg-grad-clr container-fluid ">
+            <div class="container ">
+                <div class="row align-items-center ">
+                    <div class="col-12 col-lg-6 p-0 text-center text-lg-start ">
+                        <p class="my-0 ">copyright © 2022
+                            <a href="/home ">RA-awBOT</a> | All Rights Reserved
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 mt-3 text-center text-lg-end ">
+                        <p> Designed by AKASH SINGH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+
+{% endblock body %}
